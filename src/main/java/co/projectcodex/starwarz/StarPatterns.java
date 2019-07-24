@@ -1,5 +1,7 @@
 package co.projectcodex.starwarz;
 
+import java.io.ByteArrayOutputStream;
+
 public class StarPatterns {
 
     /**
@@ -13,6 +15,15 @@ public class StarPatterns {
      */
 
     public static void line(int size) {
+
+
+
+        for (int i = 0; i<size;i++){
+
+                System.out.print("* ");
+
+        }
+
 
     }
     
@@ -41,6 +52,15 @@ public class StarPatterns {
      * @param size
      */
     public static void squareStars(int size) {
+
+        for (int i = 0; i<size;i++){
+
+            for (int j = 0; j<size; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+
+        }
 
     }
 
@@ -74,6 +94,14 @@ public class StarPatterns {
      */
     public static void triangleBottomBase(int size) {
 
+        for (int i = 0; i < size; i++) {
+
+            for (int j=0;j<=i;j++){
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
     }
 
     /**
@@ -103,6 +131,14 @@ public class StarPatterns {
 
     public static void triangleTopBase(int size) {
 
+        for (int i = size; i >= 1; i--) {
+
+            for (int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
     }
 
     /**
@@ -128,6 +164,17 @@ public class StarPatterns {
      * @param size
      */
     public static void emptySquare(int size) {
+        for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= size; j++) {
+                if (i == 1 || i == size || j == 1 || j == size) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+
 
     }
 
